@@ -1,0 +1,32 @@
+{
+  "name": "cementery_home_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently --kill-others \"npm run srv1\" \"npm run srv2\" \"npm run srv3\" \"npm run srv4\" \"npm run srv5\" \"npm run srv6\" \"npm run srv7\" \"npm run srv8\"",
+    "installAll": "concurrently \"npm run ins1\" \"npm run ins2\" \"npm run ins3\" \"npm run ins4\" \"npm run ins5\" \"npm run ins6\" \"npm run ins7\" \"npm run ins8\"",
+    "srv1": "cd server1 && npm start",
+    "srv2": "cd server2 && npm start",
+    "srv3": "cd server3 && npm start",
+    "srv4": "cd server4 && npm start",
+    "srv5": "cd server5 && npm start",
+    "srv6": "cd server6 && npm start",
+    "srv7": "cd server7 && npm start",
+    "srv8": "cd server8 && npm start",
+    "ins1": "cd server1 && npm install",
+    "ins2": "cd server2 && npm install",
+    "ins3": "cd server3 && npm install",
+    "ins4": "cd server4 && npm install",
+    "ins5": "cd server5 && npm install",
+    "ins6": "cd server6 && npm install",
+    "ins7": "cd server7 && npm install",
+    "ins8": "cd server8 && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
